@@ -3,7 +3,6 @@ import Bg from "../../assets/bg.jpg";
 
 export const Intro = styled.div`
   background-image: url(${Bg});
-  background-repeat: no-repeat;
   background-size: cover;
   padding-top: 80px;
   text-align: center;

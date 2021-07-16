@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assets/logo.svg";
 
-import { Link, Nav } from "./styles";
+import { Link, Container, Nav } from "./styles";
 
 const menuList = [
   {
@@ -36,19 +36,25 @@ const Navigation = () => {
 
   return (
     <Nav>
-      <Link to="/">
-        <img src={Logo} alt="Bikcraft" />
-      </Link>
+      <Container>
+        <Link to="/">
+          <img src={Logo} alt="Bikcraft" />
+        </Link>
 
-      <ul>
-        {menuList.map((item) => (
-          <li>
-            <Link key={item.id} to={item.link} active={item.link === pathname}>
-              {item.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
+        <ul>
+          {menuList.map((item) => (
+            <li>
+              <Link
+                key={item.id}
+                to={item.link}
+                active={item.link === pathname}
+              >
+                {item.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </Container>
     </Nav>
   );
 };

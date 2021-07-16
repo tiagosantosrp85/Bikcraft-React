@@ -2,9 +2,6 @@ import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
 
 export const Nav = styled.div`
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
   background-color: #fec63e;
   padding: 15px 0;
   position: fixed;
@@ -18,6 +15,15 @@ export const Nav = styled.div`
       margin-left: 25px;
     }
   }
+`;
+
+export const Container = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
 `;
 
 export const Link = styled(LinkRouter)`

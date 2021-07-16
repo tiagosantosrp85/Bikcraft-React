@@ -3,6 +3,8 @@ import Bg from "../../assets/bg-footer.jpg";
 
 export const Quote = styled.div`
   background-image: url(${Bg});
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 220px;
   text-align: center;
@@ -87,6 +89,10 @@ export const Copy = styled.div`
     font-family: Georgia, "Times New Roman", serif;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  a:hover {
+    border-color: #fff;
   }
 
   a {
