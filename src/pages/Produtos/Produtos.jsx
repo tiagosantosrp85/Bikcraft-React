@@ -9,8 +9,11 @@ import Lazer from "../../assets/passeio.svg";
 import Radical from "../../assets/esporte.svg";
 import Vintage from "../../assets/retro.svg";
 
-import { Box, Container, Icon } from "./styles";
+import { Container } from "./styles";
 import Topics from "../../components/Topics/Topics";
+import Form from "../../components/Form";
+
+import Footer from "../../sections/Footer";
 
 const Products = [
   {
@@ -57,6 +60,10 @@ const Produtos = () => (
         />
       ))}
     </Container>
+
+    <Form />
+
+    <Footer />
   </>
 );
 

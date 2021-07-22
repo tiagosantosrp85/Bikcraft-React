@@ -17,7 +17,7 @@ const menuList = [
   {
     id: 3,
     title: "portfólio",
-    link: "/portfólio",
+    link: "/portfolio",
   },
   {
     id: 4,
